@@ -32,6 +32,14 @@ body {
   cursor: pointer;
 }
 
+.cabecalho__notificacao::before {
+  content: "\e907";
+  color: #1AB060;
+  position: absolute;
+  left: 21.3rem;
+  top: 1.2rem;
+}
+
 .cabecalho__logo {
   width: 2.5rem;
 }
@@ -108,12 +116,19 @@ body {
 
 .principal {
   padding: 1.5rem 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .titulo-pagina {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 10px;
+}
+
+.titulo-secao {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .cartao {
@@ -123,10 +138,15 @@ body {
   background-color: #2C343A;
 }
 
+.cartao--destaque {
+  margin-bottom: 1rem;
+}
+
 .cartao__conteudo {
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
 }
 
 .cartao__destaque {
@@ -162,6 +182,10 @@ body {
   margin-right: 8px;
 }
 
+.cartao__info--money::before {
+  content: "\e905";
+}
+
 .cartao__botao {
   display: flex;
   justify-content: center;
@@ -171,6 +195,7 @@ body {
   height: 2.5rem;
   border-radius: 10px;
   font-size: 0.9rem;
+  justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -185,4 +210,14 @@ body {
 
 .cartao__botao--destaque {
   margin-right: 8px;
+}
+
+.cartao__botao--buy::before {
+  content: "\e901";
+  font-size: 1.5rem;
+}
+
+.secao {
+  display: grid;
+  gap: 1rem;
 }
