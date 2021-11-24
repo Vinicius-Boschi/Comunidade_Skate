@@ -26,22 +26,14 @@ body {
   cursor: pointer;
 }
 
+.cabecalho__logo {
+  width: 2.5rem;
+}
+
 .cabecalho__notificacao i::before {
   content: "\e906";
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-.cabecalho__notificacao::before {
-  content: "\e907";
-  color: #1AB060;
-  position: absolute;
-  left: 21.3rem;
-  top: 1.2rem;
-}
-
-.cabecalho__logo {
-  width: 2.5rem;
 }
 
 .menu-lateral {
@@ -56,11 +48,6 @@ body {
   transition: .50s;
 }
 
-.menu-lateral--ativo {
-  left: 0;
-  transition: .50s;
-}
-
 .menu-lateral__logo {
   width: 7.3rem;
   align-self: center;
@@ -72,22 +59,26 @@ body {
   color: #95999C;
   padding-left: 4rem;
   display: flex;
-  align-items: center;  
+  align-items: center;
+}
+
+.menu-lateral__link {
+  height: 4rem;
+  color: #95999C;
+  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral--ativo {
+  left: 0;
+  transition: .50s;
 }
 
 .menu-lateral__link--ativo {
   color: #FFFFFF;
   padding-left: 3.5rem;
   border-left: 8px solid #FFFFFF;
-}
-
-.menu-lateral__link::before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 1.5rem;
 }
 
 .menu-lateral__link--inicio::before {
@@ -137,6 +128,11 @@ body {
   overflow: hidden;
   background-color: #2C343A;
 }
+
+.cartao__img--picos {
+  width: auto;
+  height: 35rem;
+} 
 
 .cartao--destaque {
   margin-bottom: 1rem;
@@ -214,6 +210,11 @@ body {
 
 .cartao__botao--buy::before {
   content: "\e901";
+  font-size: 1.5rem;
+}
+
+.cartao__botao--localizacao::before {
+  content: "\e908";
   font-size: 1.5rem;
 }
 
