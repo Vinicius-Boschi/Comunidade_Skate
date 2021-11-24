@@ -46,6 +46,7 @@ body {
   position: absolute;
   left: -100vw;
   transition: .50s;
+  z-index: 999;
 }
 
 .menu-lateral__logo {
@@ -182,7 +183,7 @@ body {
   content: "\e905";
 }
 
-.cartao__botao {
+.cartao__botao, .link__botao{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,4 +222,25 @@ body {
 .secao {
   display: grid;
   gap: 1rem;
+}
+
+.cartao__img--itau {
+  height: 20rem;
+}
+
+.cartao__perfil--gap {
+  width: 40px;
+  color: #FFFFFF;
+}
+
+.cartao__perfil--nome {
+  color: #FFFFFF;
+}
+
+ 
+.cartao--gap {
+ position: absolute;
+  left: -1px;
+  right: 1px;
+  top: 3.7rem;
 }
