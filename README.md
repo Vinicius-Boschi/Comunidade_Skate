@@ -21,3 +21,5 @@
 <h2> Página de camisas </h2>
 
 <img src="assets/img/camisas-github.jpg" alt="camisas">
+
+<h3> Para ver o site completo e suas funcionalidades acesse https://hzcskate.netlify.app/camisas.html </h3>
